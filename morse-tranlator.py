@@ -36,7 +36,7 @@ def convert_input(input_string):
   input_list = uppercase_input.replace(' ', '')
   result = ''
   for i in input_list:
-    op_set = [v for (k,v) in morse_dict.items() if k==i]
+    op_list = [v for (k,v) in morse_dict.items() if k==i]
     result += ' '
     result += ' '.join(op_set) # space in join doesn't work for list of lists
   return result
